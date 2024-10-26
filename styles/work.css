@@ -1,0 +1,130 @@
+#work {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+#work-top {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+#work-text {
+    width: 90%;
+    margin: 10px auto 30px auto;
+    color: rgb(191, 111, 61);
+    font-weight: 100;
+    font-size: 20px;
+    text-align: left;
+}
+
+.section-header {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-align: left;
+    padding: 20px;
+}
+
+
+
+
+#work-bottom {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 5%;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.laptop {
+    width: 340px;
+    height: 197px;
+    user-select: none;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.laptop-display {
+    position: absolute;
+    width: 250px;
+    height: 159px;
+    top: 11px;
+    left: 47px;
+    border-radius: 5px 5px 2px 2px;
+    background-position: center;
+    background-size: cover;
+}
+
+.about-item {
+    margin: 0 20px;
+    color: rgb(211, 123, 76);
+    p { margin-bottom: 10px; }
+}
+
+#display-1 {
+    background-image: url(../images/viedii.png);
+}
+
+#display-2 {
+    background-image: url(../images/rullitis.png);
+}
+
+.site-link {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(87, 49, 28);
+    padding: 5px;
+    transition: padding 0.5s;
+}
+
+.site-link:hover {
+    padding-left: 10px;
+    transition: padding 0.5s;
+}
+
+
+
+@media screen and (max-width: 750px) {
+    .item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+    #display-1, #display-2, .black {
+        top: 11px;
+        left: 50%;
+        transform: translate(-49%, 0);
+    }
+    .about-item {
+        h1 { margin-top: 5px; }
+        p { width: 70%;
+            margin: 10px auto 20px auto; }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about-item p {
+        line-height: 22px;
+    }
+    #work-text {
+        line-height: 26px;
+    }
+}
