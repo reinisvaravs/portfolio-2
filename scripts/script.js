@@ -1,7 +1,7 @@
 
 
 
-
+console.log("portfolio-2")
 
 
 const heroHeight = document.getElementById("hero").offsetHeight
