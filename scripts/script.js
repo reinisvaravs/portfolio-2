@@ -1,3 +1,9 @@
+
+
+
+
+
+
 const heroHeight = document.getElementById("hero").offsetHeight
 const workHeight = heroHeight + document.getElementById("work").offsetHeight
 
@@ -41,10 +47,10 @@ document.querySelector("body").onscroll = function() {
         document.getElementById("bg-image").style.opacity = bgOpacity;
     }
     if (scrolled > 1600) {
-        x = scrolled / 1600;
-        bgOpacity = `${(x - 1) * 5}`;
-        if (bgOpacity > 1) { bgOpacity = 1; }
-        if (bgOpacity < 0) { bgOpacity = 0; }
+        x = scrolled / 1200;
+        if (x < 0) { x = 0; }
+        if (x > 1) { x = 1; }
+        bgOpacity = `${x-1}`;
         document.getElementById("bg-image").style.opacity = bgOpacity;
     }
 };
