@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reinis Varavs 🤟</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Lexend:wght@100..900&family=Prata&family=Tulpen+One&family=Zen+Dots&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Glass+Antiqua&family=Lexend:wght@100..900&family=Prata&family=Tulpen+One&family=Zen+Dots&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/hero.css">
+    <link rel="stylesheet" href="./styles/work.css">
+    <link rel="stylesheet" href="./styles/contacts.css">
+    <link rel="stylesheet" href="./styles/snake.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+</head>
+<body class="body">
+    <div id="bg-image" class="bg"></div>
+    <div id="cursor"></div>
+
+    <header>
+        <div id="name">
+            <p>Reinis R. Vāravs</p>
+            <p class="font1">UX/UI Designer, Developer</p>
+        </div>
+        <nav>
+            <ul><li><button class="projects-btn">works,</li>
+                <li><button class="contacts-btn">contact</button></li></ul>
+        </nav>
+    </header>
+
+    <div id="hero">
+        <div id="hero-content">
+            <div id="time">
+                <div>
+                    <p id="clock">00</p>
+                </div>
+                <div id="time-right">
+                    <p id="month">jan</p>
+                    <p>available</p>
+                    <p>for work</p>
+                </div>
+            </div>
+            <div id="creative">
+                <p>creative</p>
+            </div>
+            <div id="designer">
+                <h1>DESIGNER</h1>
+                <p>&</p>
+            </div>
+            <div id="developer">
+                <h1>DEVELOPER</h1>
+            </div>
+            <div id="hero-about">
+                <p class="font1">
+                    <span style="opacity: 0;">spacespacespace</span>I am a developer and UX/UI designer based in Latvia. I love minimal and modern design. I love nature, pizza and art.
+                </p>
+            </div>
+        </div>
+        <div id="arrow-div" class="floating">
+            <button id="arrowBtn" class="projects-btn">
+                <img src="./images/arrow.png" id="hero-arrow" draggable="false">
+            </button>
+        </div>
+    </div>
+    
+    <div id="work">
+        <div id="work-top">
+            <h4 class="section-header">Projects</h4>
+            <p id="work-text">Here you will find some of the personal and clients projects that I created. As a front-end developer my main focus is making the user experience and user interface as smooth as possible.</p>
+        </div>
+        <div id="work-bottom">
+            <div class="item">
+                <section class="floating">
+                    <img class="laptop" src="./images/laptop.png" draggable="false">
+                    <div class="laptop-display" id="display-3"></div>
+                </section>
+                <div class="about-item" id="about-item-3">
+                    <h1 class="string-highlight">"RMR Candles" store</h1>
+                    <p>RMR Candles is a small business that makes homemade candles and I created their website with advanced GSAP animations.</p>
+                    <a href="https://reinisvaravs.github.io/candles/" class="site-link" target="_blank">Case Study</a>
+                </div>
+            </div>
+            <div class="item">
+                <section class="floating">
+                    <img class="laptop" src="./images/laptop.png" draggable="false">
+                    <div class="laptop-display" id="display-1"></div>
+                </section>
+                <div class="about-item" id="about-item-1">
+                    <h1 class="string-highlight">Restoraunt "Viedi"</h1>
+                    <p>"Viedi" is a web template that I created targeting the restaurant and food industry which anyone can use to present their business online.</p>
+                    <a href="https://reinisvaravs.github.io/restaurant/" class="site-link" target="_blank">Case Study</a>
+                </div>
+            </div>
+            <div class="item">
+                <section class="floating">
+                    <img class="laptop" src="./images/laptop.png" draggable="false">
+                    <div class="laptop-display" id="display-2"></div>
+                </section>
+                <div class="about-item" id="about-item-2">
+                    <h1 class="string-highlight">Karting center "Rullitis"</h1>
+                    <p>Rullītis is a karting center and I created their website from scratch using the frontend tools I know.</p>
+                    <a href="https://reinisvaravs.github.io/karting/" class="site-link" target="_blank">Case Study</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="contacts-section">
+        <div id="contacts-container">
+            <h4 id="contacts-heading">contact.</h4>
+            <p id="sub-heading">Get in touch with me via social media or send me an email.</p>
+            <div id="email-div">
+                <p class="email" id="email">email: <a href="mailto:rreinisvaravs@gmail.com" target="_blank">rreinisvaravs@gmail.com</a></p>
+                <p class="email" id="phone">phone: <a href="tel:+371 28816633" target="_blank">+371 28816633</a></p>
+                <p class="email" id="instagram">instagram: <a href="https://www.instagram.com/reinisrvaravs/" target="_blank">@reinisrvaravs</a></p>
+            </div>
+        </div>
+    </section>
+
+    <div id="gameContainer">
+        <div class="loader" id="loader"></div>
+        <canvas id="gameBoard" width="500" height="500"></canvas>
+        <div id="scoreText">0</div>
+    </div>
+
+    <footer>
+        <div id="author-div">
+            <p id="author">2024 Reinis R. Vāravs</p>
+        </div>
+        <div id="footer-buttons">
+            <ul><li><button class="projects-btn">works,</li>
+                <li><button class="contacts-btn">contact</button></li></ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script>
+    <script src="./scripts/gsap.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

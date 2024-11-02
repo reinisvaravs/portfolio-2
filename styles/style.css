@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img { user-select: none; }
+
+html, body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Zen Dots", sans-serif;
+    line-height: 1.6;
+    background-color: black;
+    position: relative;
+}
+
+
+#cursor {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 1000;
+    display: none;
+}
+
+.floating {
+    animation: floating 4s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0%{ transform: translateY(0); }
+    50%{ transform: translateY(-15px); }
+    100%{ transform: translateY(0px); }
+}
+
+#loading-screen {
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+#loading-icon {
+    height: clamp(40px, 15vw, 130px);
+    width: clamp(40px, 15vw, 130px);
+    z-index: 3;
+    background-image: url(../images/tire.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
