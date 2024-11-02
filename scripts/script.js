@@ -30,7 +30,7 @@ const workHeight = heroHeight + document.getElementById("work").offsetHeight
 document.querySelectorAll(".projects-btn").forEach(button => {
     button.onclick = () => {
         window.scroll({
-            top: heroHeight -120, 
+            top: heroHeight +100, 
             left: 0, 
             behavior: 'smooth' 
         });
@@ -40,7 +40,7 @@ document.querySelectorAll(".projects-btn").forEach(button => {
 document.querySelectorAll(".contacts-btn").forEach(button => {
     button.onclick = () => {
         window.scroll({
-            top: workHeight, 
+            top: workHeight +500, 
             left: 0, 
             behavior: 'smooth' 
         });
